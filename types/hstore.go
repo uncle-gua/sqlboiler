@@ -25,7 +25,7 @@ import (
 	"strings"
 
 	"github.com/volatiletech/null"
-	"github.com/volatiletech/sqlboiler/randomize"
+	"github.com/thrasher-corp/sqlboiler/randomize"
 )
 
 // HStore is a wrapper for transferring HStore values back and forth easily.
