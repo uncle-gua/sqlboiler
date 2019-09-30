@@ -626,6 +626,7 @@ func (p PostgresDriver) Imports() (importers.Collection, error) {
 				`"fmt"`,
 				`"io"`,
 				`"io/ioutil"`,
+				`"path/filepath"`,
 				`"os"`,
 				`"os/exec"`,
 				`"regexp"`,
