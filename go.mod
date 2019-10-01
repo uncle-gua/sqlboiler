@@ -4,9 +4,10 @@ go 1.13
 
 require (
 	github.com/DATA-DOG/go-sqlmock v1.3.3
+	github.com/apmckinlay/gsuneido v0.0.0-20190404155041-0b6cd442a18f // indirect
 	github.com/davecgh/go-spew v1.1.1
 	github.com/denisenkom/go-mssqldb v0.0.0-20190924004331-208c0a498538
-	github.com/ericlagergren/decimal v0.0.0-20190912144844-2c3e3e1ef942
+	github.com/ericlagergren/decimal v0.0.0-20180907214518-0bb163153a5d
 	github.com/go-sql-driver/mysql v1.4.1
 	github.com/gofrs/uuid v3.2.0+incompatible
 	github.com/lib/pq v1.2.0
