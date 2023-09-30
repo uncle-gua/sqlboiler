@@ -10,9 +10,9 @@ import (
 	// Side effect import go-mssqldb
 	_ "github.com/denisenkom/go-mssqldb"
 	"github.com/pkg/errors"
-	"github.com/thrasher-corp/sqlboiler/drivers"
-	"github.com/thrasher-corp/sqlboiler/importers"
-	"github.com/thrasher-corp/sqlboiler/strmangle"
+	"github.com/uncle-gua/sqlboiler/drivers"
+	"github.com/uncle-gua/sqlboiler/importers"
+	"github.com/uncle-gua/sqlboiler/strmangle"
 )
 
 func init() {
@@ -463,8 +463,8 @@ func (MSSQLDriver) Imports() (col importers.Collection, err error) {
 				`"strings"`,
 			},
 			ThirdParty: importers.List{
-				`"github.com/thrasher-corp/sqlboiler/strmangle"`,
-				`"github.com/thrasher-corp/sqlboiler/drivers"`,
+				`"github.com/uncle-gua/sqlboiler/strmangle"`,
+				`"github.com/uncle-gua/sqlboiler/drivers"`,
 			},
 		},
 	}
@@ -488,8 +488,8 @@ func (MSSQLDriver) Imports() (col importers.Collection, err error) {
 				`"github.com/kat-co/vala"`,
 				`"github.com/pkg/errors"`,
 				`"github.com/spf13/viper"`,
-				`"github.com/thrasher-corp/sqlboiler/drivers/sqlboiler-mssql/driver"`,
-				`"github.com/thrasher-corp/sqlboiler/randomize"`,
+				`"github.com/uncle-gua/sqlboiler/drivers/sqlboiler-mssql/driver"`,
+				`"github.com/uncle-gua/sqlboiler/randomize"`,
 				`_ "github.com/denisenkom/go-mssqldb"`,
 			},
 		},
@@ -497,61 +497,61 @@ func (MSSQLDriver) Imports() (col importers.Collection, err error) {
 
 	col.BasedOnType = importers.Map{
 		"null.Float32": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Float64": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Int": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Int8": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Int16": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Int32": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Int64": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Uint": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Uint8": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Uint16": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Uint32": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Uint64": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.String": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Bool": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Time": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Bytes": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"time.Time": {
 			Standard: importers.List{`"time"`},
 		},
 		"types.Decimal": {
-			Standard: importers.List{`"github.com/thrasher-corp/sqlboiler/types"`},
+			Standard: importers.List{`"github.com/uncle-gua/sqlboiler/types"`},
 		},
 		"types.NullDecimal": {
-			Standard: importers.List{`"github.com/thrasher-corp/sqlboiler/types"`},
+			Standard: importers.List{`"github.com/uncle-gua/sqlboiler/types"`},
 		},
 	}
 	return col, err

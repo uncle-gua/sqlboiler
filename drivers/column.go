@@ -3,7 +3,7 @@ package drivers
 import (
 	"strings"
 
-	"github.com/thrasher-corp/sqlboiler/strmangle"
+	"github.com/uncle-gua/sqlboiler/strmangle"
 )
 
 // Column holds information about a database column.

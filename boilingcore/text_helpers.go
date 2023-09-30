@@ -3,8 +3,8 @@ package boilingcore
 import (
 	"strings"
 
-	"github.com/thrasher-corp/sqlboiler/drivers"
-	"github.com/thrasher-corp/sqlboiler/strmangle"
+	"github.com/uncle-gua/sqlboiler/drivers"
+	"github.com/uncle-gua/sqlboiler/strmangle"
 )
 
 // txtNameToOne creates the local and foreign function names for
@@ -60,8 +60,8 @@ func txtNameToOne(fk drivers.ForeignKey) (localFn, foreignFn string) {
 //
 // The output of the foreign key is the name for that side of the relationship.
 //
-//   | tags |  | tags_videos      |  | videos |
-//   | id   |  | tag_id, video_id |  | id     |
+//	| tags |  | tags_videos      |  | videos |
+//	| id   |  | tag_id, video_id |  | id     |
 //
 // In this setup the lhs is the tag_id foreign key, and so the lhsFn will
 // refer to "how to name the lhs" which in this case should be tags. And

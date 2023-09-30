@@ -12,10 +12,10 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/thrasher-corp/sqlboiler/importers"
+	"github.com/uncle-gua/sqlboiler/importers"
 
-	"github.com/thrasher-corp/sqlboiler/drivers"
-	_ "github.com/thrasher-corp/sqlboiler/drivers/mocks"
+	"github.com/uncle-gua/sqlboiler/drivers"
+	_ "github.com/uncle-gua/sqlboiler/drivers/mocks"
 )
 
 var state *State
@@ -172,12 +172,12 @@ func TestProcessTypeReplacements(t *testing.T) {
 					Nullable: true,
 				},
 				{
-					Name: "domain",
-					Type: "int",
-					DBType: "numeric",
-					Default: "some db nonsense",
+					Name:       "domain",
+					Type:       "int",
+					DBType:     "numeric",
+					Default:    "some db nonsense",
 					DomainName: &domainStr,
-					Nullable: false,
+					Nullable:   false,
 				},
 			},
 		},

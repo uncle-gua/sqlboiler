@@ -1,7 +1,7 @@
 package boil
 
 import (
-	"github.com/thrasher-corp/sqlboiler/strmangle"
+	"github.com/uncle-gua/sqlboiler/strmangle"
 )
 
 // Columns kinds
@@ -96,21 +96,21 @@ func (c Columns) IsGreylist() bool {
 // Note that a default column's zero value is based on the Go type and does
 // not take into account the default value in the database.
 //
-//  Infer:
-//   insert: columns-without-default + non-zero-default-columns
-//   return: columns-with-defaults - insert
+//	Infer:
+//	 insert: columns-without-default + non-zero-default-columns
+//	 return: columns-with-defaults - insert
 //
-//  Whitelist:
-//   insert: whitelist
-//   return: columns-with-defaults - whitelist
+//	Whitelist:
+//	 insert: whitelist
+//	 return: columns-with-defaults - whitelist
 //
-//  Blacklist:
-//    insert: columns-without-default + non-zero-default-columns - blacklist
-//    return: columns-with-defaults - insert
+//	Blacklist:
+//	  insert: columns-without-default + non-zero-default-columns - blacklist
+//	  return: columns-with-defaults - insert
 //
-//  Greylist:
-//    insert: columns-without-default + non-zero-default-columns + greylist
-//    return: columns-with-defaults - insert
+//	Greylist:
+//	  insert: columns-without-default + non-zero-default-columns + greylist
+//	  return: columns-with-defaults - insert
 func (c Columns) InsertColumnSet(cols, defaults, noDefaults, nonZeroDefaults []string) ([]string, []string) {
 	switch c.Kind {
 	case columnsInfer:
@@ -152,10 +152,10 @@ func (c Columns) InsertColumnSet(cols, defaults, noDefaults, nonZeroDefaults []s
 // which isn't useful in an update since then you can't find the original
 // record you were trying to update.
 //
-//  Infer:     all - pkey-columns
-//  whitelist: whitelist
-//  blacklist: all - pkeys - blacklist
-//  greylist:  all - pkeys + greylist
+//	Infer:     all - pkey-columns
+//	whitelist: whitelist
+//	blacklist: all - pkeys - blacklist
+//	greylist:  all - pkeys + greylist
 func (c Columns) UpdateColumnSet(allColumns, pkeyCols []string) []string {
 	switch c.Kind {
 	case columnsInfer:

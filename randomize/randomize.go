@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
-	"github.com/thrasher-corp/sqlboiler/strmangle"
+	"github.com/uncle-gua/sqlboiler/strmangle"
 )
 
 // Randomizer allows a field to be randomized
@@ -113,10 +113,12 @@ func Struct(s *Seed, str interface{}, colTypes map[string]string, canBeNull bool
 // randomizeField changes the value at field to a "randomized" value.
 //
 // If canBeNull is false:
-//  The value will always be a non-null and non-zero value.
+//
+//	The value will always be a non-null and non-zero value.
 //
 // If canBeNull is true:
-//  The value has the possibility of being null or a non-zero value at random.
+//
+//	The value has the possibility of being null or a non-zero value at random.
 func randomizeField(s *Seed, field reflect.Value, fieldType string, canBeNull bool) error {
 	kind := field.Kind()
 	typ := field.Type()

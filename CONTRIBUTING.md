@@ -42,7 +42,7 @@ with the Github code review tools. Then it will be merged into dev, and later go
 
 ## Developer getting started
 
-1. Add a [Configuration files](https://github.com/thrasher-corp/sqlboiler#configuration).
+1. Add a [Configuration files](https://github.com/uncle-gua/sqlboiler#configuration).
 1. You may need to install go-bindata first. Refer to this repo. https://github.com/kevinburke/go-bindata
 
    ```
@@ -72,7 +72,7 @@ with the Github code review tools. Then it will be merged into dev, and later go
 1. You may need to install following package before able to run the tests.
 
    ```
-   go get -u github.com/volatiletech/null
+   go get -u github.com/uncle-gua/null
    ```
 
 1. Test the output

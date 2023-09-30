@@ -6,8 +6,8 @@ import (
 	"sort"
 
 	"github.com/pkg/errors"
-	"github.com/thrasher-corp/sqlboiler/importers"
-	"github.com/thrasher-corp/sqlboiler/strmangle"
+	"github.com/uncle-gua/sqlboiler/importers"
+	"github.com/uncle-gua/sqlboiler/strmangle"
 )
 
 // These constants are used in the config map passed into the driver

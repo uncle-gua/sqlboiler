@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/thrasher-corp/sqlboiler/strmangle"
+	"github.com/uncle-gua/sqlboiler/strmangle"
 )
 
 var (

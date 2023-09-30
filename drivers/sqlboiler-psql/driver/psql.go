@@ -10,11 +10,11 @@ import (
 	"os"
 	"strings"
 
-	"github.com/thrasher-corp/sqlboiler/importers"
+	"github.com/uncle-gua/sqlboiler/importers"
 
 	"github.com/pkg/errors"
-	"github.com/thrasher-corp/sqlboiler/drivers"
-	"github.com/thrasher-corp/sqlboiler/strmangle"
+	"github.com/uncle-gua/sqlboiler/drivers"
+	"github.com/uncle-gua/sqlboiler/strmangle"
 
 	// Side-effect import sql driver
 	_ "github.com/lib/pq"
@@ -608,8 +608,8 @@ func (p PostgresDriver) Imports() (importers.Collection, error) {
 				`"strings"`,
 			},
 			ThirdParty: importers.List{
-				`"github.com/thrasher-corp/sqlboiler/strmangle"`,
-				`"github.com/thrasher-corp/sqlboiler/drivers"`,
+				`"github.com/uncle-gua/sqlboiler/strmangle"`,
+				`"github.com/uncle-gua/sqlboiler/drivers"`,
 			},
 		},
 	}
@@ -636,139 +636,139 @@ func (p PostgresDriver) Imports() (importers.Collection, error) {
 				`"github.com/kat-co/vala"`,
 				`"github.com/pkg/errors"`,
 				`"github.com/spf13/viper"`,
-				`"github.com/thrasher-corp/sqlboiler/drivers/sqlboiler-psql/driver"`,
-				`"github.com/thrasher-corp/sqlboiler/randomize"`,
+				`"github.com/uncle-gua/sqlboiler/drivers/sqlboiler-psql/driver"`,
+				`"github.com/uncle-gua/sqlboiler/randomize"`,
 				`_ "github.com/lib/pq"`,
-				`"github.com/thrasher-corp/goose"`,
+				`"github.com/uncle-gua/goose"`,
 			},
 		},
 	}
 	col.BasedOnType = importers.Map{
 		"null.Float32": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Float64": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Int": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Int8": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Int16": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Int32": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Int64": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Uint": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Uint8": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Uint16": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Uint32": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Uint64": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.String": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Bool": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Time": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.JSON": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"null.Bytes": {
-			ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 		},
 		"time.Time": {
 			Standard: importers.List{`"time"`},
 		},
 		"types.JSON": {
-			ThirdParty: importers.List{`"github.com/thrasher-corp/sqlboiler/types"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/sqlboiler/types"`},
 		},
 		"types.Decimal": {
-			ThirdParty: importers.List{`"github.com/thrasher-corp/sqlboiler/types"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/sqlboiler/types"`},
 		},
 		"types.BytesArray": {
-			ThirdParty: importers.List{`"github.com/thrasher-corp/sqlboiler/types"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/sqlboiler/types"`},
 		},
 		"types.Int64Array": {
-			ThirdParty: importers.List{`"github.com/thrasher-corp/sqlboiler/types"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/sqlboiler/types"`},
 		},
 		"types.Float64Array": {
-			ThirdParty: importers.List{`"github.com/thrasher-corp/sqlboiler/types"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/sqlboiler/types"`},
 		},
 		"types.BoolArray": {
-			ThirdParty: importers.List{`"github.com/thrasher-corp/sqlboiler/types"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/sqlboiler/types"`},
 		},
 		"types.StringArray": {
-			ThirdParty: importers.List{`"github.com/thrasher-corp/sqlboiler/types"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/sqlboiler/types"`},
 		},
 		"types.DecimalArray": {
-			ThirdParty: importers.List{`"github.com/thrasher-corp/sqlboiler/types"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/sqlboiler/types"`},
 		},
 		"types.HStore": {
-			ThirdParty: importers.List{`"github.com/thrasher-corp/sqlboiler/types"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/sqlboiler/types"`},
 		},
 		"pgeo.Point": {
-			ThirdParty: importers.List{`"github.com/thrasher-corp/sqlboiler/types/pgeo"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/sqlboiler/types/pgeo"`},
 		},
 		"pgeo.Line": {
-			ThirdParty: importers.List{`"github.com/thrasher-corp/sqlboiler/types/pgeo"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/sqlboiler/types/pgeo"`},
 		},
 		"pgeo.Lseg": {
-			ThirdParty: importers.List{`"github.com/thrasher-corp/sqlboiler/types/pgeo"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/sqlboiler/types/pgeo"`},
 		},
 		"pgeo.Box": {
-			ThirdParty: importers.List{`"github.com/thrasher-corp/sqlboiler/types/pgeo"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/sqlboiler/types/pgeo"`},
 		},
 		"pgeo.Path": {
-			ThirdParty: importers.List{`"github.com/thrasher-corp/sqlboiler/types/pgeo"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/sqlboiler/types/pgeo"`},
 		},
 		"pgeo.Polygon": {
-			ThirdParty: importers.List{`"github.com/thrasher-corp/sqlboiler/types/pgeo"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/sqlboiler/types/pgeo"`},
 		},
 		"types.NullDecimal": {
-			ThirdParty: importers.List{`"github.com/thrasher-corp/sqlboiler/types"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/sqlboiler/types"`},
 		},
 		"pgeo.Circle": {
-			ThirdParty: importers.List{`"github.com/thrasher-corp/sqlboiler/types/pgeo"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/sqlboiler/types/pgeo"`},
 		},
 		"pgeo.NullPoint": {
-			ThirdParty: importers.List{`"github.com/thrasher-corp/sqlboiler/types/pgeo"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/sqlboiler/types/pgeo"`},
 		},
 		"pgeo.NullLine": {
-			ThirdParty: importers.List{`"github.com/thrasher-corp/sqlboiler/types/pgeo"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/sqlboiler/types/pgeo"`},
 		},
 		"pgeo.NullLseg": {
-			ThirdParty: importers.List{`"github.com/thrasher-corp/sqlboiler/types/pgeo"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/sqlboiler/types/pgeo"`},
 		},
 		"pgeo.NullBox": {
-			ThirdParty: importers.List{`"github.com/thrasher-corp/sqlboiler/types/pgeo"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/sqlboiler/types/pgeo"`},
 		},
 		"pgeo.NullPath": {
-			ThirdParty: importers.List{`"github.com/thrasher-corp/sqlboiler/types/pgeo"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/sqlboiler/types/pgeo"`},
 		},
 		"pgeo.NullPolygon": {
-			ThirdParty: importers.List{`"github.com/thrasher-corp/sqlboiler/types/pgeo"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/sqlboiler/types/pgeo"`},
 		},
 		"pgeo.NullCircle": {
-			ThirdParty: importers.List{`"github.com/thrasher-corp/sqlboiler/types/pgeo"`},
+			ThirdParty: importers.List{`"github.com/uncle-gua/sqlboiler/types/pgeo"`},
 		},
 	}
 

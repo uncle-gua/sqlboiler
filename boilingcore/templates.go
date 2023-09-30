@@ -5,16 +5,16 @@ import (
 	"encoding"
 	"encoding/base64"
 	"fmt"
-	"io/ioutil"
+	"os"
 	"path/filepath"
 	"sort"
 	"strings"
 	"text/template"
 
 	"github.com/pkg/errors"
-	"github.com/thrasher-corp/sqlboiler/drivers"
-	"github.com/thrasher-corp/sqlboiler/strmangle"
-	"github.com/thrasher-corp/sqlboiler/templatebin"
+	"github.com/uncle-gua/sqlboiler/drivers"
+	"github.com/uncle-gua/sqlboiler/strmangle"
+	"github.com/uncle-gua/sqlboiler/templatebin"
 )
 
 // templateData for sqlboiler templates
@@ -155,7 +155,7 @@ type fileLoader string
 
 func (f fileLoader) Load() ([]byte, error) {
 	fname := string(f)
-	b, err := ioutil.ReadFile(fname)
+	b, err := os.ReadFile(fname)
 	if err != nil {
 		return nil, errors.Wrapf(err, "failed to load template: %s", fname)
 	}

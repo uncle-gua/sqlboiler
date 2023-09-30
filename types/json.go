@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/thrasher-corp/sqlboiler/randomize"
+	"github.com/uncle-gua/sqlboiler/randomize"
 )
 
 // JSON is an alias for json.RawMessage, which is

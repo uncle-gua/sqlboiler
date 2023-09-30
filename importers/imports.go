@@ -10,7 +10,7 @@ import (
 	"github.com/spf13/cast"
 
 	"github.com/pkg/errors"
-	"github.com/thrasher-corp/sqlboiler/strmangle"
+	"github.com/uncle-gua/sqlboiler/strmangle"
 )
 
 // Collection of imports for various templating purposes
@@ -202,20 +202,20 @@ func NewDefaultImports() Collection {
 		},
 		ThirdParty: List{
 			`"github.com/pkg/errors"`,
-			`"github.com/thrasher-corp/sqlboiler/boil"`,
-			`"github.com/thrasher-corp/sqlboiler/queries"`,
-			`"github.com/thrasher-corp/sqlboiler/queries/qm"`,
-			`"github.com/thrasher-corp/sqlboiler/queries/qmhelper"`,
-			`"github.com/thrasher-corp/sqlboiler/strmangle"`,
+			`"github.com/uncle-gua/sqlboiler/boil"`,
+			`"github.com/uncle-gua/sqlboiler/queries"`,
+			`"github.com/uncle-gua/sqlboiler/queries/qm"`,
+			`"github.com/uncle-gua/sqlboiler/queries/qmhelper"`,
+			`"github.com/uncle-gua/sqlboiler/strmangle"`,
 		},
 	}
 
 	col.Singleton = Map{
 		"boil_queries": {
 			ThirdParty: List{
-				`"github.com/thrasher-corp/sqlboiler/drivers"`,
-				`"github.com/thrasher-corp/sqlboiler/queries"`,
-				`"github.com/thrasher-corp/sqlboiler/queries/qm"`,
+				`"github.com/uncle-gua/sqlboiler/drivers"`,
+				`"github.com/uncle-gua/sqlboiler/queries"`,
+				`"github.com/uncle-gua/sqlboiler/queries/qm"`,
 			},
 		},
 		"boil_types": {
@@ -224,8 +224,8 @@ func NewDefaultImports() Collection {
 			},
 			ThirdParty: List{
 				`"github.com/pkg/errors"`,
-				`"github.com/thrasher-corp/sqlboiler/boil"`,
-				`"github.com/thrasher-corp/sqlboiler/strmangle"`,
+				`"github.com/uncle-gua/sqlboiler/boil"`,
+				`"github.com/uncle-gua/sqlboiler/strmangle"`,
 			},
 		},
 	}
@@ -237,10 +237,10 @@ func NewDefaultImports() Collection {
 			`"testing"`,
 		},
 		ThirdParty: List{
-			`"github.com/thrasher-corp/sqlboiler/boil"`,
-			`"github.com/thrasher-corp/sqlboiler/queries"`,
-			`"github.com/thrasher-corp/sqlboiler/randomize"`,
-			`"github.com/thrasher-corp/sqlboiler/strmangle"`,
+			`"github.com/uncle-gua/sqlboiler/boil"`,
+			`"github.com/uncle-gua/sqlboiler/queries"`,
+			`"github.com/uncle-gua/sqlboiler/randomize"`,
+			`"github.com/uncle-gua/sqlboiler/strmangle"`,
 		},
 	}
 
@@ -259,7 +259,7 @@ func NewDefaultImports() Collection {
 			},
 			ThirdParty: List{
 				`"github.com/spf13/viper"`,
-				`"github.com/thrasher-corp/sqlboiler/boil"`,
+				`"github.com/uncle-gua/sqlboiler/boil"`,
 			},
 		},
 		"boil_queries_test": {
@@ -272,7 +272,7 @@ func NewDefaultImports() Collection {
 				`"regexp"`,
 			},
 			ThirdParty: List{
-				`"github.com/thrasher-corp/sqlboiler/boil"`,
+				`"github.com/uncle-gua/sqlboiler/boil"`,
 			},
 		},
 		"boil_suites_test": {

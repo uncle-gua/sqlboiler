@@ -15,7 +15,7 @@ DRIVER_DB="sqlboiler_driver_test"
 build() {
     driver=$1
 
-    buildPath=github.com/thrasher-corp/sqlboiler
+    buildPath=github.com/uncle-gua/sqlboiler
     case "${driver}" in
         all)
             set -o xtrace

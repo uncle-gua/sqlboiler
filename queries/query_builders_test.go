@@ -10,7 +10,7 @@ import (
 	"testing"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/thrasher-corp/sqlboiler/drivers"
+	"github.com/uncle-gua/sqlboiler/drivers"
 )
 
 var writeGoldenFiles = flag.Bool(

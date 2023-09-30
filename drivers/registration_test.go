@@ -3,7 +3,7 @@ package drivers
 import (
 	"testing"
 
-	"github.com/thrasher-corp/sqlboiler/importers"
+	"github.com/uncle-gua/sqlboiler/importers"
 )
 
 type testRegistrationDriver struct{}

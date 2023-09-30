@@ -12,10 +12,10 @@ import (
 	"strings"
 
 	"github.com/pkg/errors"
-	"github.com/thrasher-corp/sqlboiler/drivers"
-	"github.com/thrasher-corp/sqlboiler/importers"
-	"github.com/thrasher-corp/sqlboiler/strmangle"
-	"github.com/thrasher-corp/sqlboiler/templatebin"
+	"github.com/uncle-gua/sqlboiler/drivers"
+	"github.com/uncle-gua/sqlboiler/importers"
+	"github.com/uncle-gua/sqlboiler/strmangle"
+	"github.com/uncle-gua/sqlboiler/templatebin"
 )
 
 const (

@@ -3,7 +3,7 @@ package drivers
 import (
 	"testing"
 
-	"github.com/thrasher-corp/sqlboiler/strmangle"
+	"github.com/uncle-gua/sqlboiler/strmangle"
 )
 
 type testMockDriver struct{}

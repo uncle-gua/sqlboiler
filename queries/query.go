@@ -5,8 +5,8 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/thrasher-corp/sqlboiler/boil"
-	"github.com/thrasher-corp/sqlboiler/drivers"
+	"github.com/uncle-gua/sqlboiler/boil"
+	"github.com/uncle-gua/sqlboiler/drivers"
 )
 
 // joinKind is the type of join

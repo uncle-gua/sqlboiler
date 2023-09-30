@@ -1,9 +1,9 @@
 package mocks
 
 import (
-	"github.com/thrasher-corp/sqlboiler/drivers"
-	"github.com/thrasher-corp/sqlboiler/importers"
-	"github.com/thrasher-corp/sqlboiler/strmangle"
+	"github.com/uncle-gua/sqlboiler/drivers"
+	"github.com/uncle-gua/sqlboiler/importers"
+	"github.com/uncle-gua/sqlboiler/strmangle"
 )
 
 func init() {
@@ -23,16 +23,16 @@ func (m *MockDriver) Imports() (importers.Collection, error) {
 	return importers.Collection{
 		BasedOnType: importers.Map{
 			"null.Int": {
-				ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+				ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 			},
 			"null.String": {
-				ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+				ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 			},
 			"null.Time": {
-				ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+				ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 			},
 			"null.Bytes": {
-				ThirdParty: importers.List{`"github.com/volatiletech/null"`},
+				ThirdParty: importers.List{`"github.com/uncle-gua/null"`},
 			},
 
 			"time.Time": {

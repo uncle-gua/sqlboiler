@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/thrasher-corp/sqlboiler/boil"
+	"github.com/uncle-gua/sqlboiler/boil"
 )
 
 var testEagerCounters struct {

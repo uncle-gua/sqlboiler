@@ -11,9 +11,9 @@ import (
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/thrasher-corp/sqlboiler/boilingcore"
-	"github.com/thrasher-corp/sqlboiler/drivers"
-	"github.com/thrasher-corp/sqlboiler/importers"
+	"github.com/uncle-gua/sqlboiler/boilingcore"
+	"github.com/uncle-gua/sqlboiler/drivers"
+	"github.com/uncle-gua/sqlboiler/importers"
 )
 
 //go:generate go-bindata -nometadata -pkg templatebin -o templatebin/bindata.go templates templates/singleton templates_test templates_test/singleton
@@ -77,7 +77,7 @@ func main() {
 		Use:   "sqlboiler [flags] <driver>",
 		Short: "SQL Boiler generates an ORM tailored to your database schema.",
 		Long: "SQL Boiler generates a Go ORM from template files, tailored to your database schema.\n" +
-			`Complete documentation is available at http://github.com/thrasher-corp/sqlboiler`,
+			`Complete documentation is available at http://github.com/uncle-gua/sqlboiler`,
 		Example:       `sqlboiler psql`,
 		PreRunE:       preRun,
 		RunE:          run,

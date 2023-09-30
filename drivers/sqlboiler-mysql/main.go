@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/thrasher-corp/sqlboiler/drivers"
-	"github.com/thrasher-corp/sqlboiler/drivers/sqlboiler-mysql/driver"
+	"github.com/uncle-gua/sqlboiler/drivers"
+	"github.com/uncle-gua/sqlboiler/drivers/sqlboiler-mysql/driver"
 )
 
 func main() {

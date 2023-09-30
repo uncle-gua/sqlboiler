@@ -18,7 +18,7 @@ import (
 	"os/exec"
 	"testing"
 
-	"github.com/thrasher-corp/sqlboiler/drivers"
+	"github.com/uncle-gua/sqlboiler/drivers"
 )
 
 var (
